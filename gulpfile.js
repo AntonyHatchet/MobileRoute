@@ -4,6 +4,9 @@ var jade = require('gulp-jade');
 var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
 
+gulp.task('default',['style', 'template', 'watch' ], function () {
+});
+
 gulp.task('style', function () {
     gulp.src('assets/stylus/*.styl')
         .pipe(stylus())
@@ -11,7 +14,7 @@ gulp.task('style', function () {
         .pipe(livereload());
 });
 
-gulp.task('jade', function() {
+gulp.task('template', function() {
     gulp.src('assets/template/index.jade')
         .pipe(jade())
         .pipe(gulp.dest('public/'))
@@ -22,5 +25,5 @@ gulp.task('jade', function() {
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch('assets/stylus/style.styl', ['style']);
-    gulp.watch('assets/template/index.jade', ['jade']);
+    gulp.watch('assets/template/index.jade', ['template']);
 });
