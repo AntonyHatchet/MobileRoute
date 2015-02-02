@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var map;
-    var cords = [[51.508, -0.11],[52.508, -0.11],[53.508, -1.11]];
+    var cords = [[51.508, -0.11],[52.508, -0.11],[53.508, -1.11],[43.508, -1.11]];
     var point;
 
     function initmap() {
@@ -37,6 +37,5 @@ document.addEventListener("DOMContentLoaded", function() {
             circle(point);
         }
     }
-    console.log(pointAdd(cords));
 
 });
