@@ -37,5 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
             circle(point);
         }
     }
+    console.log(pointAdd(cords));
 
 });
