@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         polyline.addTo(map);
     }
     initmap();
-
+//сортировать координаты по времени
     function circle(point){
         L.circle(point, 500, {
         color: 'red',
@@ -37,6 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
             circle(point);
         }
     }
-    console.log(pointAdd(cords));
+    pointAdd(cords);
 
 });
