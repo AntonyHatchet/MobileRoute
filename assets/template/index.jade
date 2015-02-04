@@ -32,8 +32,54 @@ html(lang="ru")
                         span  Где?
                         span.glyphicon.glyphicon-time(aria-hidden="true")
                         span  Когда?
-                    .col-xs-12.maps
-                        #map
+                    .col-xs-12
+                        .maps
+                            #map.mapSmall
+                                span.glyphicon.glyphicon-fullscreen
+                                #users.col-xs-2
+                                    div.activeUser.col-xs-12
+                                        span Иванов Иван Иванович
+                                    div.col-xs-12
+                                        span Иванов Иван Иванович
+                                    div.col-xs-12
+                                        span Иванов Иван Иванович
+                                    div.col-xs-12
+                                        span Иванов Иван Иванович
+                                #coords.col-xs-12
+                                    span.glyphicon.glyphicon-menu-down
+                                    table.table.table-condensed.route-table
+                                        thead
+                                            tr
+                                                th Задание
+                                                th Время
+                                                th Координаты
+                                                th Скорость
+                                                th Направление
+                                                th Статус
+                                        tbody
+                                            tr
+                                                td Доставка № 1234
+                                                td 02.11.2015 18:43:06
+                                                td 53.0876 34.5005
+                                                td 75км\ч
+                                                td 250*
+                                                td Выполняется
+                                            tr
+                                                td Доставка № 1234
+                                                td 02.11.2015 18:43:06
+                                                td 53.0876 34.5005
+                                                td 75км\ч
+                                                td 250*
+                                                td Выполняется
+                                            tr
+                                                td Доставка № 1234
+                                                td 02.11.2015 18:43:06
+                                                td 53.0876 34.5005
+                                                td 75км\ч
+                                                td 250*
+                                                td Выполняется
+                        .aboute-text.col-xs-7
+                            span Какой то бъясняющий текст, зачем все это вообще нужно компании и как это поможет в решении бизнес задач
                 .row.device-type
                     .col-xs-12
                     .col-xs-12
@@ -42,4 +88,5 @@ html(lang="ru")
         script(src="plugins/leaflet/maps.js", type="text/javascript")
         script(src="http://code.jquery.com/jquery.min.js", type="text/javascript")
         script(src="js/bootstrap-3.1.1.min.js", type="text/javascript")
+        script(src="js/controler.js", type="text/javascript")
 

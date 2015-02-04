@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function initmap() {
         // set up the map
-        map = new L.Map('map');
+        map = new L.Map('map',{zoomControl: false});
 
         // create the tile layer with correct attribution
         var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         map.addLayer(osm);
         //add polyline
         polyline.addTo(map);
+        //disable scroll zoom //TODO нужно сделать включение отключение зума по кнопке
+        map.scrollWheelZoom.disable();
     }
     initmap();
 //сортировать координаты по времени
