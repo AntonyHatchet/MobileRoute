@@ -1,0 +1,33 @@
+{
+  "name": "MobileRoute",
+  "version": "0.0.10",
+  "description": "",
+  "main": "./build/server.js",
+  "dependencies": {
+    "debug": "^2.1.2",
+    "eventemitter3": "^0.1.6",
+    "express": "^4.12.1",
+    "flux": "^2.0.1",
+    "griddle-react": "^0.2.8",
+    "lodash": "^3.3.1",
+    "morgan": "^1.5.1",
+    "react": "^0.12.2",
+    "react-bootstrap": "^0.16.1",
+    "superagent": "^1.0.0",
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bzod/MobileRoute.git"
+  },
+  "author": "$NAME <$EMAIL>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bzod/MobileRoute/issues"
+  },
+  "homepage": "https://github.com/Bzod/MobileRoute"
+}
