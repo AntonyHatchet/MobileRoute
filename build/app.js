@@ -83,7 +83,6 @@
     var user = JSON.parse(localStorage.getItem("session"));
     if (user === null) {
       user = { 0: "not authorized" };
-      return user;
     }
     var props = {
       user: user,
